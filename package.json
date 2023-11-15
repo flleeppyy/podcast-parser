@@ -1,0 +1,45 @@
+{
+  "name": "darknet-diaries-podcasts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p .",
+    "run": "node build/index.js",
+    "dev": "node --stack_trace_limit=200 --loader ts-node/esm src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "1.0.0-rc.12",
+    "fast-xml-parser": "^4.3.2",
+    "image-js": "^0.35.5",
+    "node-id3": "^0.2.6",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@espimarisa/eslint-config": "^4.2.0",
+    "@types/node": "^20.9.0",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^16.3.1",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-security": "^1.7.1",
+    "eslint-plugin-unicorn": "^49.0.0",
+    "prettier": "^3.1.0",
+    "ts-node": "^10.9.1"
+  },
+  "ts-node": {
+    "esm": true
+  },
+  "node": {
+    "stack_trace_limit": 200
+  }
+}
